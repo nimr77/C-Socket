@@ -1,4 +1,4 @@
-# NimrSawafta
+# C Socket File Sending
 Download and send data with c languge 
 gcc -pthread StartServer02.c TestServer02.c for the server 
 gcc CONNECTTO.C TestServer02.c
