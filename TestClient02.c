@@ -1,6 +1,12 @@
 
 #include "CONNECTINGTO.h"
-
+//Here we start the main client connection with the server 
+/*
+first thing it will connect to the server via the port and the Ip address of the machine itself 
+then it will ask for a user name and a password 
+then it will load user's prevlage
+if its allow to do stuff it will show the menu
+*/
 int main(){
     char ip[16],UserName[30];
     int Port;
@@ -24,7 +30,7 @@ int main(){
 		printf("Could not create socket");
 	}
 	puts("Socket created");
-	
+	///Binding the server 
 	server.sin_addr.s_addr = inet_addr(ip);
 	server.sin_family = AF_INET;
 	server.sin_port = htons( Port );
@@ -108,7 +114,7 @@ int main(){
 		//printf("%d",NP);
    while (write ( sock , &KeepMeIn , sizeof(KeepMeIn))){
     if(r!=0){
-    
+    ///The menu, please note its better to take it from the server, and not using the functions as I made
     c = menu();
     switch (c){
     
