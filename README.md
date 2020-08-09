@@ -395,4 +395,4 @@ int Download (int sock ){
 Note that it require the socket only so it will know the socket that will recive the data or taking the data from, in the read and write.
 
 ### Other functions
-The other function are C functions to handle the stracts and the threads in the server or the client 
+The other function are C functions to handle the stracts and the threads in the server or the client. 
